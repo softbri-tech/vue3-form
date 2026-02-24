@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-import Input from "./Input.vue";
 
 defineProps({
   type: { type: String, default: "button" },

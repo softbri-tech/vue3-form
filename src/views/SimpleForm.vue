@@ -16,6 +16,7 @@ const city = ref("")
 const postalCode = ref("")
 const acceptedTerms = ref(false)
 const confirm18 = ref(false)
+const successMsg = ref("")
 
 const countries = [
   { value: "ro", label: "Romania" },
@@ -102,6 +103,7 @@ const onSubmit = () => {
     confirm18: confirm18.value,
   }
 
+  successMsg.value = "Form submitted successfully!"
   console.log("FORM DATA:", data)
   resetForm()
 }
@@ -180,8 +182,11 @@ const onSubmit = () => {
           {{ errors.confirm18 }}
         </p>
       </div>
+      <p v-if="successMsg" class="text-green-600 text-sm my-4">
+        {{ successMsg }}
+      </p>
       <div class="button-container">
-        <Button class="mt-10" text="Trimite" type="submit" />
+        <Button class="my-5" text="Trimite" type="submit" />
       </div>
     </div>
   </form>
