@@ -110,7 +110,7 @@ const onSubmit = () => {
 <template>
   <form @submit.prevent="onSubmit">
     <div class="form-wrapper">
-      <Title class="mb-10" text="Form"/>
+      <Title class="my-5 main-title" text="Form"/>
       <div class="form-group flex gap-x-2">
         <div class="w-full flex flex-col">
           <Input v-model="firstName" type="text" placeholder="Your First Name" />

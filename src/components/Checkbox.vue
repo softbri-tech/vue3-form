@@ -1,5 +1,5 @@
 <template>
-  <label class="checkbox">
+  <label class="checkbox flex gap-x-3">
     <input
         type="checkbox"
         :checked="modelValue"

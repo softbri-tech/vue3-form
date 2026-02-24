@@ -17,15 +17,22 @@ form{
       font-style: italic;
       color: #a3a3a3;
       border-radius: 3px;
-      -webkit-appearance: none;
       transition: .3s ease-in-out;
       background-color: #fafafa;
       border: none;
       outline: none;
+      &::placeholder{
+        color: #a3a3a3;
+
+      }
     }
     &:not(:last-child){
       margin-bottom: 25px;
     }
   }
-
+  .main-title{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+  }
 }
